@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="container_form">
+    <h1>Cadastro Paciente:</h1>
+    <link rel="stylesheet" href="Tela cadastro paciente final.CSS">
+    <form class="form" action="#" method="post">
+        
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Nome</label>
+            <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+        </div>    
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Sobrenome</label>
+            <input type="text" name="sobrenome" class="form_input" id="sobrenome" placeholder="sobrenome" required>
+        </div>
+        
+        <div class="form_grupo">
+            <label for="e-mail" class="form_label">Email</label>
+            <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+        </div>
+        
+        <div class="form_grupo">
+            <label for="datanascimento" class="form_label">Data de Nascimento</label>
+            <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+        </div>        
+        <div class="form_grupo">
+            
+            <label for="estadocivil" class="text">Estado civil</label>
+            <select name="estadocivil" class="dropdown" required>
+                
+                <option selected disabled class="form_select_option" value="">Selecione</option>
+                <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
+                <option value="Casado" class="form_select_option">Casado(a) </option>
+                <option value="Divorciado" class="form_select_option">Divorciado(a)</option>                    
+                <option value="Viúvo" class="form_select_option">Viúvo(a)</option>                    
+            
+            </select>
+        </div>
+        <div class="form_grupo">
+            <label for="nome" class="form_label">RG</label>
+            <input type="text" name="rg" class="form_input" id="rg" placeholder="xx.xxx.xxx-xx" required>
+        </div>
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Orgão Emissor</label>
+            <input type="text" name="orgãoemissor" class="form_input" id="orgãoemissor" placeholder="Orgão emissor" required>
+        </div>
+
+        <div class="form_grupo">
+            <label for="nome" class="form_label">CPF</label>
+            <input type="text" name="cpf" class="form_input" id="cpf" placeholder="xxx.xxx.xxx-xx" required>
+        </div>
+
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Estado</label>
+            <input type="text" name="estado" class="form_input" id="estado" placeholder="" required>
+        </div>
+
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Cidade</label>
+            <input type="text" name="cidade" class="form_input" id="cidade" placeholder="" required>
+        </div>
+
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Bairro</label>
+            <input type="text" name="bairro" class="form_input" id="bairro" placeholder="" required>
+        </div>
+
+        <div class="form_grupo">
+            <label for="nome" class="form_label">Rua e Número</label>
+            <input type="text" name="rua" class="form_input" id="rua" placeholder="" required>
+        </div>
+
+
+        <div class="form_grupo">
+            <span class="legenda">Sexo:</span>
+            
+            <div class="radio-btn">
+                <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
+                <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
+            </div>
+            <div class="radio-btn">
+                <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
+                <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
+            </div>
+        </div>
+
+
+
+    <div class="form_grupo">
+        <span class="legenda">Possuí Convênio:</span>
+		<div class="radio-btn">
+			<input type="radio" class="form_new_input" id="plano1" name="plano_medico" value="Unimed">
+			<label for="plano1" class="radio_label form_label"> <span class="radio_new_btn"></span> Unimed</label>
+		</div>
+		<div class="radio-btn">
+			<input type="radio" class="form_new_input" id="plano2" name="plano_medico" value="Vitallis">
+			<label for="plano2" class="radio_label form_label"> <span class="radio_new_btn"></span> Vitallis</label>
+		</div>
+		<div class="radio-btn">
+			<input type="radio" class="form_new_input" id="plano3" name="plano_medico" value="Não">
+			<label for="plano3" class="radio_label form_label"> <span class="radio_new_btn"></span> Não</label>
+		</div>
+	</div>
+
+
+
+
+            <div class="submit">
+              <input type="hidden" name="acao" value="enviar">
+              <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+            
+            </div>
+
+
+
+            <div class="submit">
+                <input type="hidden" name="acao" value="enviar">
+                <button type="submit" name="Editar" class="submit_btn" >Editar Cadastro</button>
+              
+              
+
+
+
+              <div class="submit">
+                <input type="hidden" name="acao" value="enviar">
+                <button type="submit" name="Exluir" class="submit_btn" >Excluir Cadastro</button>
+              
+              </div>
+
+
+              <div id="sidebar">
+                <h2>Clinica Médica</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Encontre um Médico</a></li>
+                    <li><a href="#">Agendar Consulta</a></li>
+                    <li><a href="#">Horários</a></li>   
+                    <li> <a href="CadastroMedico.html" target="_blank">Cadastro Médico</a></li>
+     
+                </ul>
+              </div>
+                
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</div><!--container_form-->
+</body>
+</html>
