@@ -89,18 +89,20 @@ legend {
     background-image: linear-gradient(to right, #84d0dc, #5cd4ec);
 }
 
-#retorno{
-    background-image: linear-gradient(to right, #bcebdf, #bcebdf);
-    width: 100%;
+#data_retorno{
     border: none;
-    padding: 10px;
-    color: black;
-    font-size: 15px;
-    cursor: pointer;
+    padding: 8px;
     border-radius: 10px;
+    outline: none;
+    font-size: 15px;
 }
 
- #retorno:hover {
-    background-image: linear-gradient(to right, #84d0dc, #5cd4ec);
- }
+#horario_retorno{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+    
 
