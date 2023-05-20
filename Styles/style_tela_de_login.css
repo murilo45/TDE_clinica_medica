@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #bcebdf, #278a9e);
+    background-image: linear-gradient(to right, #f3a963, #f67206);
 }
 
 .box {
@@ -16,15 +16,15 @@ body {
 }
 
 fieldset {
-    border: 3px solid #bcebdf;
+    border: 3px solid #f67206;
 }
 
 legend {
-    color: #404040;
-    border: 1px solid #bcebdf;
+    color: #ffffff;
+    border: 1px solid #f67206;
     padding: 10px;
     text-align: center;
-    background-color: #bcebdf;
+    background-color: #f67206;
     border-radius: 8px;
 }
 
@@ -55,7 +55,7 @@ legend {
 .inputUser:valid~.labelInput {
     top: -20px;
     font-size: 12px;
-    color: #bcebdf;
+    color: #f67206;
 }
 
 #data {
@@ -67,7 +67,7 @@ legend {
 }
 
 #submit {
-    background-image: linear-gradient(to right, #bcebdf, #bcebdf);
+    background-image: linear-gradient(to right, #f3a963, #f67206);
     width: 100%;
     border: none;
     padding: 10px;
@@ -78,7 +78,7 @@ legend {
 }
 
 #submit:hover {
-    background-image: linear-gradient(to right, #84d0dc, #5cd4ec);
+    background-image: linear-gradient(to right, #f49b51, #ff7300);
 }
 
 #entrar {
